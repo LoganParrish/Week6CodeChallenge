@@ -1,0 +1,93 @@
+﻿@model Week6CodeChallenge.Models.Contact
+@{
+    ViewBag.Title = "Contact me!";
+}
+
+<h2>Contact Form</h2>
+
+<form id="contactForm" action="@Url.Action("Index", "Contact")" method="post">
+    <div class="textBoxes">
+        
+    <div class="firstNameBox">
+        <br /><br />
+        First Name
+        @*Create label, then text box, then validation for each property you want to display*@
+        <br />
+        @Html.ValidationMessageFor(x => x.firstName)
+        <br />
+        @Html.TextBoxFor(x => x.firstName)
+        
+    </div>
+        
+        
+    <div class="lastNameBox">
+        <br /><br />
+        Last Name
+        <br />
+        @Html.ValidationMessageFor(x => x.lastName)
+        <br />
+        @Html.TextBoxFor(x => x.lastName)
+        
+    </div>
+        <br />
+        
+    <div class="phoneBox">
+        <br /><br />
+        Phone Number
+        <br />
+        @Html.ValidationMessageFor(x => x.phoneNum)
+        <br />
+        @Html.TextBoxFor(x => x.phoneNum)
+        
+        
+
+    </div>
+        
+        <div class="emailBox">
+            <br /><br />
+        eMail
+        <br />
+        @Html.ValidationMessageFor(x => x.email)
+            <br />
+        @Html.TextBoxFor(x => x.email)
+        
+    </div>
+        <br />
+        
+        <div class="companyName">
+            <br /><br />
+        Company Name
+        <br />
+        @Html.ValidationMessageFor(x => x.companyName)
+            <br />
+        @Html.TextBoxFor(x => x.companyName)
+            </div>
+
+        <div class="projectDescription">
+            <br /><br />
+        Project Description
+        <br />
+        @Html.ValidationMessageFor(x => x.projectDescription)
+            <br />
+        @Html.TextBoxFor(x => x.projectDescription)
+            </div>
+                <br />
+
+    <div class="commentBox">
+        <br /><br />
+        Message
+        <br />
+        @Html.ValidationMessageFor(x => x.comment)
+        <br />
+        @Html.TextAreaFor(x => x.comment)
+       
+    </div>
+        <br />
+        </div>
+    <div class="hitMe">
+    <input type="submit" value="HIT ME WITH YOUR BEST SHOT" />
+        </div>
+</form>
+@section Scripts {
+    @Scripts.Render("~/bundles/jqueryval")
+}

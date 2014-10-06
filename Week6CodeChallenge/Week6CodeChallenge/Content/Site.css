@@ -1,0 +1,181 @@
+﻿body {
+    font-size: .85em;
+    font-family: "Segoe UI", Verdana, Helvetica, Sans-Serif;
+    color: #232323;
+    background-color: #EBDDE2;
+    margin-bottom:50px;   
+}
+
+header, nav, section {
+    display: block;
+    text-align:center; 
+    
+}
+footer{
+    text-align:center;
+    position:fixed;
+    height:50px;
+    bottom:0px;
+    left:0px;
+    right:0px;
+    margin-bottom:0px;
+}
+.container {
+    border:dotted;
+    border-color:#B93B8F;
+    border-radius:10px;
+    display:block;
+    background-color:#F9B7FF;
+    text-align:center;
+}
+div.firstNameBox{
+    display:inline-block;
+   
+}
+div.lastNameBox{
+    display:inline-block;
+    
+}
+div.phoneBox{
+    display:inline-block;
+    
+}
+div.emailBox{
+    display:inline-block;
+    
+}
+div.commentBox{
+    display:inline-block;
+    
+}
+.companyName{
+    display:inline-block;
+}
+.projectDescription{
+    display:inline-block;
+}
+
+
+/* Styles for basic forms
+-----------------------------------------------------------*/
+fieldset {
+    border: 1px solid #ddd;
+    padding: 0 1.4em 1.4em 1.4em;
+    margin: 0 0 1.5em 0;
+}
+
+legend {
+    font-size: 1.2em;
+    font-weight: bold;
+}
+
+textarea {
+    min-height: 75px;
+}
+
+.editor-label {
+    margin: 1em 0 0 0;
+}
+
+.editor-field {
+    margin: 0.5em 0 0 0;
+}
+
+
+/* Styles for validation helpers
+-----------------------------------------------------------*/
+.field-validation-error {
+    font-size:xx-small;
+    color: #B93B8F;
+}
+
+.field-validation-valid {
+    display: none;
+}
+
+.input-validation-error {
+    border: 1px solid #f00;
+    background-color: #FFCAA6;
+}
+
+.validation-summary-errors {
+    font-weight: bold;
+    color: #f00;
+}
+textarea{
+    resize:none;
+    min-height:75px;
+    min-width:150px;
+}
+
+.validation-summary-valid {
+    display: none;
+}
+.ajax-get{
+    display:inline-block;
+    text-align:center;
+    cursor:pointer;
+}
+.ajaxtabs{
+    text-align:center;
+}
+.logo{
+    display:inline-block;
+    text-align:center;
+    height:50px;
+}
+.center{
+    text-align:center;
+
+}
+
+.aboutTabDiv{
+    align:center;
+    border:dotted;
+    border-color:#B93B8F;
+    border-radius:10px;
+    width:500px;
+    height:200px;
+    display:inline-block;
+    background-color:#F9B7FF;
+
+}
+.workImage{
+    border:dotted;
+    border-color:#B93B8F;
+    border-radius:10px;
+    width:40%;
+    display:inline-block;
+    background-color:#F9B7FF;
+   
+}
+.subDiv{
+    border:dotted;
+    border-color:#B93B8F;
+    border-radius:10px;
+    width:20%;
+    height:100px;
+    display:inline-table;
+    background-color:#F9B7FF;
+    margin:5px;
+    text-align:center;
+}
+.divHome1{
+    border:dotted;
+    border-color:#B93B8F;
+    border-radius:10px;
+    display:block;
+    background-color:#F9B7FF;
+    margin:5px;
+    text-align:center;
+}
+.headerTab{
+    color:#7D1B7E;
+    display:inline-block;
+    transition:color 1s ease-out;
+}
+.headerTab:hover{
+    color:#FF00FF;
+}
+
+

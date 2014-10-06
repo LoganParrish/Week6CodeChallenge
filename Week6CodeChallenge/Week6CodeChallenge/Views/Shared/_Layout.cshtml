@@ -1,0 +1,63 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width" />
+    <title>@ViewBag.Title</title>
+    @Styles.Render("~/Content/css")
+    @Scripts.Render("~/bundles/modernizr")
+</head>
+<body>
+    <header>
+<h1 align="center">Logan Parrish</h1>
+    
+    <div class="logo"></div><img src="http://cdn-img.easylogo.cn/gif/51/51700.gif" alt="Fake Studios" style="height:50px" /></div>
+    <nav style="display:inline-block">
+    <ul>
+        <h3>
+            <div class="headerTab">
+        <li class="ajax-get" data-url="@Url.Action("Index", "Home")">Home</li> <div style="color:white; display:inline-block">::</div>
+                </div>
+            <div class="headerTab">
+        <li class="ajax-get" data-url="@Url.Action("Index", "About")">About</li> <div style="color:white; display:inline-block">::</div>
+            </div>
+            <div class="headerTab">
+        <li class="ajax-get" data-url="@Url.Action("Index", "Work")">Work</li>  <div style="color:white; display:inline-block">::</div>
+            </div>
+            <div class="headerTab">
+        <li class="ajax-get" data-url="@Url.Action("Index", "Careers")">Careers</li> <div style="color:white; display:inline-block">::</div>
+            </div>
+            <div class="headerTab">
+        <li class="ajax-get" data-url="@Url.Action("Index", "Contact")">Contact</li> 
+            </div>
+        </h3>
+    </ul>
+    </nav>
+    </header>
+    <section class="container">
+        @RenderBody()
+    </section>
+    <footer>
+        Logan Parrish Inc.&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+        
+        <div class="headerTab">
+         <li class="ajax-get" data-url="@Url.Action("Index", "Home")">Home</li> <div style="color:white; display:inline-block">::</div>
+                </div>
+            <div class="headerTab">
+        <li class="ajax-get" data-url="@Url.Action("Index", "About")">About</li> <div style="color:white; display:inline-block">::</div>
+            </div>
+            <div class="headerTab">
+        <li class="ajax-get" data-url="@Url.Action("Index", "Work")">Work</li>  <div style="color:white; display:inline-block">::</div>
+            </div>
+            <div class="headerTab">
+        <li class="ajax-get" data-url="@Url.Action("Index", "Careers")">Careers</li> <div style="color:white; display:inline-block">::</div>
+            </div>
+            <div class="headerTab">
+        <li class="ajax-get" data-url="@Url.Action("Index", "Contact")">Contact</li> 
+
+    </footer>
+    @Scripts.Render("~/bundles/jquery")
+    @RenderSection("scripts", required: false)
+    
+</body>
+</html>

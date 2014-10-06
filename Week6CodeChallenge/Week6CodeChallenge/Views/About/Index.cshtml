@@ -1,0 +1,21 @@
+﻿@{
+    ViewBag.Title = "About";
+}
+<section class="container">
+<div class="ajaxtabs">
+<h2>About</h2>
+
+<ul class="aboutTabs">
+    <li class="ajax-get" data-url="@Url.Action("Who", "About")">Who&nbsp;</li>|
+    <li class="ajax-get" data-url="@Url.Action("What", "About")">&nbsp;What&nbsp;</li>|
+    <li class="ajax-get" data-url="@Url.Action("Why", "About")">&nbsp;Why&nbsp;</li>|
+    <li class="ajax-get" data-url="@Url.Action("How", "About")">&nbsp;How&nbsp;</li>|
+    <li class="ajax-get" data-url="@Url.Action("Where", "About")">&nbsp;Where</li>
+</ul>
+    <div class="aboutTabDiv">
+<div id="content">
+    Whooooooo are you? Who who? Who who?
+</div>
+        </div>
+    </div>
+    </section>
